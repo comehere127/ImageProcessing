@@ -1,0 +1,6 @@
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW1s\bin\Debug\IPHW1s.exe.config
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW1s\bin\Debug\IPHW1s.exe
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW1s\bin\Debug\IPHW1s.pdb
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW1s\obj\Debug\IPHW1s.csprojResolveAssemblyReference.cache
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW1s\obj\Debug\IPHW1s.exe
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW1s\obj\Debug\IPHW1s.pdb

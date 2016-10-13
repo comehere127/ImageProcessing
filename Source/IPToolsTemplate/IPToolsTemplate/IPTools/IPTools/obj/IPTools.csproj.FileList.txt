@@ -1,0 +1,8 @@
+bin\Debug\IPTools.exe
+bin\Debug\IPTools.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\IPTools.MainForm.resources
+obj\Debug\IPTools.Properties.Resources.resources
+obj\Debug\IPTools.csproj.GenerateResource.Cache
+obj\Debug\IPTools.exe
+obj\Debug\IPTools.pdb

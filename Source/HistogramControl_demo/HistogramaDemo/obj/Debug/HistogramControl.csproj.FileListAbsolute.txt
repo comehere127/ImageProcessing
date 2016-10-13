@@ -1,0 +1,8 @@
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\HistogramControl_demo\HistogramaDemo\bin\Debug\HistogramDemo.exe
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\HistogramControl_demo\HistogramaDemo\bin\Debug\HistogramDemo.pdb
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\HistogramControl_demo\HistogramaDemo\obj\Debug\HistogramControl.csprojResolveAssemblyReference.cache
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\HistogramControl_demo\HistogramaDemo\obj\Debug\Histograma.HistogramaDesenat.resources
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\HistogramControl_demo\HistogramaDemo\obj\Debug\HistogramDemo.MainForm.resources
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\HistogramControl_demo\HistogramaDemo\obj\Debug\HistogramControl.csproj.GenerateResource.Cache
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\HistogramControl_demo\HistogramaDemo\obj\Debug\HistogramDemo.exe
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\HistogramControl_demo\HistogramaDemo\obj\Debug\HistogramDemo.pdb

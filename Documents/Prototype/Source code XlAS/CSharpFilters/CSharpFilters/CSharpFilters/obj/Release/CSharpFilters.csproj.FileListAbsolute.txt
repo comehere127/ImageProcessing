@@ -1,0 +1,35 @@
+C:\Documents and Settings\Lam\Desktop\CSharpFilters\CSharpFilters\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Lam\Desktop\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.ColorInput.resources
+C:\Documents and Settings\Lam\Desktop\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Convolution.resources
+C:\Documents and Settings\Lam\Desktop\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Form1.resources
+C:\Documents and Settings\Lam\Desktop\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.GammaInput.resources
+C:\Documents and Settings\Lam\Desktop\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Parameter.resources
+C:\Documents and Settings\Lam\Desktop\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.csproj.GenerateResource.Cache
+C:\Documents and Settings\Lam\Desktop\CSharpFilters\CSharpFilters\bin\Release\CSharpFilters.exe
+C:\Documents and Settings\Lam\Desktop\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.exe
+D:\xu ly\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.exe
+D:\xu ly\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\ResolveAssemblyReference.cache
+D:\xu ly\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.ColorInput.resources
+D:\xu ly\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Convolution.resources
+D:\xu ly\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Form1.resources
+D:\xu ly\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Parameter.resources
+D:\xu ly\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.csproj.GenerateResource.Cache
+D:\xu ly\CSharpFilters\CSharpFilters\CSharpFilters\bin\Release\CSharpFilters.exe
+E:\Giang day\Giao trinh\Xu ly anh\BAI THUC HANH\[Svtoantin.com] - xu li anh\Nguyen Duc Lam\New Folder\code + exe\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.exe
+E:\Giang day\Giao trinh\Xu ly anh\BAI THUC HANH\[Svtoantin.com] - xu li anh\Nguyen Duc Lam\New Folder\code + exe\CSharpFilters\CSharpFilters\CSharpFilters\bin\Release\CSharpFilters.exe
+E:\Giang day\Giao trinh\Xu ly anh\BAI THUC HANH\[Svtoantin.com] - xu li anh\Nguyen Duc Lam\New Folder\code + exe\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\ResolveAssemblyReference.cache
+E:\Giang day\Giao trinh\Xu ly anh\BAI THUC HANH\[Svtoantin.com] - xu li anh\Nguyen Duc Lam\New Folder\code + exe\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.ColorInput.resources
+E:\Giang day\Giao trinh\Xu ly anh\BAI THUC HANH\[Svtoantin.com] - xu li anh\Nguyen Duc Lam\New Folder\code + exe\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Convolution.resources
+E:\Giang day\Giao trinh\Xu ly anh\BAI THUC HANH\[Svtoantin.com] - xu li anh\Nguyen Duc Lam\New Folder\code + exe\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Form1.resources
+E:\Giang day\Giao trinh\Xu ly anh\BAI THUC HANH\[Svtoantin.com] - xu li anh\Nguyen Duc Lam\New Folder\code + exe\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Parameter.resources
+E:\Giang day\Giao trinh\Xu ly anh\BAI THUC HANH\[Svtoantin.com] - xu li anh\Nguyen Duc Lam\New Folder\code + exe\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\GenerateResource-ResGen.read.1.tlog
+E:\Giang day\Giao trinh\Xu ly anh\BAI THUC HANH\[Svtoantin.com] - xu li anh\Nguyen Duc Lam\New Folder\code + exe\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\GenerateResource-ResGen.write.1.tlog
+E:\Giang day\Giao trinh\Xu ly anh\BAI thuc hanh\bai xu ly hinh thai tren c# rat hay\code + exe\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.exe
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.exe
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\bin\Release\CSharpFilters.exe
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.csprojResolveAssemblyReference.cache
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.ColorInput.resources
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Convolution.resources
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Form1.resources
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Parameter.resources
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.csproj.GenerateResource.Cache

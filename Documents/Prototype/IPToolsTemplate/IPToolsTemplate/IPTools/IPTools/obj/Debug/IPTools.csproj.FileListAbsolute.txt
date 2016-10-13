@@ -1,0 +1,34 @@
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.exe
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.pdb
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\bin\Debug\IPTools.exe
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\bin\Debug\IPTools.pdb
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\ResolveAssemblyReference.cache
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.MainForm.resources
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.Properties.Resources.resources
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.csproj.GenerateResource.Cache
+F:\D\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.exe
+F:\D\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.pdb
+F:\D\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\bin\Debug\IPTools.exe
+F:\D\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\bin\Debug\IPTools.pdb
+F:\D\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\ResolveAssemblyReference.cache
+F:\D\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.MainForm.resources
+F:\D\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.Properties.Resources.resources
+F:\D\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.csproj.GenerateResource.Cache
+D:\GiangDay\Xulyanh\IPTools\IPTools\IPTools\obj\Debug\IPTools.exe
+D:\GiangDay\Xulyanh\IPTools\IPTools\IPTools\obj\Debug\IPTools.pdb
+D:\GiangDay\Xulyanh\IPTools\IPTools\IPTools\bin\Debug\IPTools.exe
+D:\GiangDay\Xulyanh\IPTools\IPTools\IPTools\bin\Debug\IPTools.pdb
+D:\GiangDay\Xulyanh\IPTools\IPTools\IPTools\obj\Debug\ResolveAssemblyReference.cache
+D:\GiangDay\Xulyanh\IPTools\IPTools\IPTools\obj\Debug\IPTools.MainForm.resources
+D:\GiangDay\Xulyanh\IPTools\IPTools\IPTools\obj\Debug\IPTools.Properties.Resources.resources
+D:\GiangDay\Xulyanh\IPTools\IPTools\IPTools\obj\Debug\IPTools.csproj.GenerateResource.Cache
+D:\Class\14_DIP_1_Undergraduate\Xu ly anh_Duong\IPTools\IPTools\IPTools\obj\Debug\IPTools.exe
+D:\Class\14_DIP_1_Undergraduate\Xu ly anh_Duong\IPTools\IPTools\IPTools\obj\Debug\IPTools.pdb
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\IPToolsTemplate\IPToolsTemplate\IPTools\IPTools\bin\Debug\IPTools.exe
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\IPToolsTemplate\IPToolsTemplate\IPTools\IPTools\bin\Debug\IPTools.pdb
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\IPToolsTemplate\IPToolsTemplate\IPTools\IPTools\obj\Debug\IPTools.csprojResolveAssemblyReference.cache
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\IPToolsTemplate\IPToolsTemplate\IPTools\IPTools\obj\Debug\IPTools.MainForm.resources
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\IPToolsTemplate\IPToolsTemplate\IPTools\IPTools\obj\Debug\IPTools.Properties.Resources.resources
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\IPToolsTemplate\IPToolsTemplate\IPTools\IPTools\obj\Debug\IPTools.csproj.GenerateResource.Cache
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\IPToolsTemplate\IPToolsTemplate\IPTools\IPTools\obj\Debug\IPTools.exe
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\IPToolsTemplate\IPToolsTemplate\IPTools\IPTools\obj\Debug\IPTools.pdb

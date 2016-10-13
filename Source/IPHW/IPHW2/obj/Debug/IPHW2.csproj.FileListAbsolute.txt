@@ -1,0 +1,9 @@
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\bin\Debug\IPHW2.exe.config
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\bin\Debug\IPHW2.exe
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\bin\Debug\IPHW2.pdb
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\obj\Debug\IPHW2.Form1.resources
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\obj\Debug\IPHW2.Properties.Resources.resources
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\obj\Debug\IPHW2.csproj.GenerateResource.Cache
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\obj\Debug\IPHW2.exe
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\obj\Debug\IPHW2.pdb
+c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\obj\Debug\IPHW2.csprojResolveAssemblyReference.cache

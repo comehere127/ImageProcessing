@@ -1,0 +1,9 @@
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW6\bin\Debug\IPHW6.exe.config
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW6\bin\Debug\IPHW6.exe
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW6\bin\Debug\IPHW6.pdb
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW6\obj\Debug\IPHW6.csprojResolveAssemblyReference.cache
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW6\obj\Debug\IPHW6.Form1.resources
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW6\obj\Debug\IPHW6.Properties.Resources.resources
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW6\obj\Debug\IPHW6.csproj.GenerateResource.Cache
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW6\obj\Debug\IPHW6.exe
+E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW6\obj\Debug\IPHW6.pdb

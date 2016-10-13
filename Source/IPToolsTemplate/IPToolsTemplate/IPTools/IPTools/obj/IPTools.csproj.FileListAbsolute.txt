@@ -1,0 +1,8 @@
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.exe
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.pdb
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\bin\Debug\IPTools.exe
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\bin\Debug\IPTools.pdb
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\ResolveAssemblyReference.cache
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.MainForm.resources
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.Properties.Resources.resources
+D:\Giangday\0708ky1\Xu ly anh - Tin39\IPTools\IPTools\IPTools\obj\Debug\IPTools.csproj.GenerateResource.Cache
