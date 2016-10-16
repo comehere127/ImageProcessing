@@ -1,6 +1,7 @@
 ﻿using IPHW6.Process;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -35,13 +36,9 @@ namespace IPHW4
 		//-1	-2		-1
 		public static byte[,] Convl3x3(Bitmap bInput, string type)
 		{
-			Bitmap bOutput = new Bitmap(bInput.Width, bInput.Height);
-			Bitmap bImage;
-			byte[,] image;
 			int val;
-			bImage = (Bitmap) bOutput.Clone();
-			image = ConvertTograyScale(bInput);
 			ConvolutionMatrix cm = new ConvolutionMatrix();
+			byte[,] image = ConvertTograyScale(bInput);
 			if (type == "x")
 			{
 				//d(f)/d(x)
@@ -51,7 +48,7 @@ namespace IPHW4
 				cm.MidLeft = 2;
 				cm.MidRight = -2;
 			}
-			else if(type=="y")
+			else if (type == "y")
 			{
 				//d(f)/d(y)
 				cm.SetAll(0);
@@ -61,30 +58,51 @@ namespace IPHW4
 				cm.BottomMid = -2;
 			}
 
-			if (type == "xy")
+			//Convolution
+			int tmpX = image.GetLength(0) + 2;
+			int tmpY = image.GetLength(1) + 2;
+			int[,] tmp = new int[tmpX, tmpY];
+			for (int i = 0; i < tmpX; i++)
 			{
-				
-				byte[,] imageX = Convl3x3(bInput, "x");
-				byte[,] imageY = Convl3x3(bInput, "y");
-				byte[,] imageDes = imageX;
-				for (int xDes = 0; xDes < imageX.GetLength(0); xDes++)
+				for (int j = 0; j < tmpY; j++)
 				{
-					for (int yDes = 0; yDes < imageX.GetLength(1); yDes++)
+					if ((i - 1) >= 0 && (i + 1) < tmpX && (j - 1) >= 0 && (j + 1) < tmpY)
 					{
-						val = (int) Math.Sqrt(imageX[xDes, yDes] * imageX[xDes, yDes] + imageY[xDes, yDes] * imageY[xDes, yDes]);
-						if (val > 255)
-							val = 255;
-						imageDes[xDes, yDes] = (byte)val;
+						tmp[i, j] = (int)image[i - 1, j - 1];
+					}
+					else
+					{
+						tmp[i, j] = 0;
 					}
 				}
-				return imageDes;
 			}
-			else
-				return image;
+			
+			for (int xTmp = 1; xTmp < tmp.GetLength(0) - 1; xTmp++)
+			{
+				for (int yTmp = 1; yTmp < tmp.GetLength(1) - 1; yTmp++)
+				{
+					val = tmp[xTmp - 1, yTmp - 1] * cm.TopLeft + tmp[xTmp - 1, yTmp] * cm.TopMid + tmp[xTmp - 1, yTmp + 1] * cm.TopRight
+										+ tmp[xTmp, yTmp - 1] * cm.MidLeft + tmp[xTmp, yTmp] * cm.Pixel + tmp[xTmp, yTmp] * cm.MidRight
+										+ tmp[xTmp + 1, yTmp - 1] * cm.BottomLeft + tmp[xTmp + 1, yTmp] * cm.BottomMid + tmp[xTmp + 1, yTmp + 1] * cm.BottomRight;
+					if (val < 0) val = 0;
+					if (val > 255) val = 255;
+					image[xTmp - 1, yTmp - 1] = (byte)val;
+				}
+			}
+			//for (int i = 0; i < image.GetLength(0); i++)
+			//{
+			//	Debug.WriteLine("");
+			//	for (int j = 0; j < image.GetLength(1); j++)
+			//	{
+			//		Debug.Write(image[i, j] + "-");
+			//	}
+			//}
+			return image;
 		}
 
-		private static void ConvertToBitmap(Bitmap bOutput, byte[,] bSource)
+		public static Bitmap ConvertToBitmap(byte[,] bSource)
 		{
+			Bitmap bOutput = new Bitmap(bSource.GetLength(0), bSource.GetLength(1));
 			byte val;
 			for (int xDes = 0; xDes < bSource.GetLength(0); xDes++)
 			{
@@ -94,11 +112,31 @@ namespace IPHW4
 					bOutput.SetPixel(xDes, yDes, Color.FromArgb(val, val, val));
 				}
 			}
+			return bOutput;
 		}
-		public static byte[,] Threshold(byte[,] bSource, int iThreshold)
+		public static byte[,] SobelConvol(Bitmap bX, Bitmap bY)
+		{
+			int val;
+			byte[,] imageX = ConvertBitmapToArrByte(bX);
+			byte[,] imageY = ConvertBitmapToArrByte(bY);
+			byte[,] imageDes = new byte[bX.Width, bX.Height];
+			for (int xDes = 0; xDes < bX.Width; xDes++)
+			{
+				for (int yDes = 0; yDes < bX.Height; yDes++)
+				{
+					val = (int)Math.Sqrt(imageX[xDes, yDes] * imageX[xDes, yDes] + imageY[xDes, yDes] * imageY[xDes, yDes]);
+					if (val < 0) val = 0;
+					if (val > 255) val = 255;
+					imageDes[xDes, yDes] = (byte)val;
+				}
+			}
+			return imageDes;
+		}
+		public static byte[,] Threshold(Bitmap bInput, int iThreshold)
 		{
 			int val;
 			byte color;
+			byte[,] bSource = ConvertBitmapToArrByte(bInput);
 			for (int xDes = 0; xDes < bSource.GetLength(0); xDes++)
 			{
 				for (int yDes = 0; yDes < bSource.GetLength(1); yDes++)
@@ -106,12 +144,25 @@ namespace IPHW4
 					val = (int)bSource[xDes, yDes];
 					if (val < iThreshold)
 						val = iThreshold;
+					if (val > 255) val = 255;
 
 					color = (byte)val;
 					bSource[xDes, yDes] = color;
 				}
 			}
 			return bSource;
+		}
+		private static byte[,] ConvertBitmapToArrByte(Bitmap bInput)
+		{
+			byte[,] imageDes = new byte[bInput.Width, bInput.Height];
+			for (int i = 0; i < bInput.Width; i++)
+			{
+				for (int j = 0; j < bInput.Height; j++)
+				{
+					imageDes[i, j] = bInput.GetPixel(i, j).B;
+				}
+			}
+			return imageDes;
 		}
 
 	}

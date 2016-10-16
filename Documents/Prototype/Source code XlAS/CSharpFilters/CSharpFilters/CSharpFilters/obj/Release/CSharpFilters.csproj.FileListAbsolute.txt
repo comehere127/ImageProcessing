@@ -33,3 +33,12 @@ E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS
 E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Form1.resources
 E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Parameter.resources
 E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.csproj.GenerateResource.Cache
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\bin\Release\CSharpFilters.exe.config
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.exe
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\bin\Release\CSharpFilters.exe
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.csprojResolveAssemblyReference.cache
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.ColorInput.resources
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Convolution.resources
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Form1.resources
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.Parameter.resources
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Documents\Prototype\Source code XlAS\CSharpFilters\CSharpFilters\CSharpFilters\obj\Release\CSharpFilters.csproj.GenerateResource.Cache

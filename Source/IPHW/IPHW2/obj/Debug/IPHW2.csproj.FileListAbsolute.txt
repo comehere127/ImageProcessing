@@ -7,3 +7,12 @@ c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\obj\Deb
 c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\obj\Debug\IPHW2.exe
 c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\obj\Debug\IPHW2.pdb
 c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW2\obj\Debug\IPHW2.csprojResolveAssemblyReference.cache
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW2\bin\Debug\IPHW2.exe.config
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW2\bin\Debug\IPHW2.exe
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW2\bin\Debug\IPHW2.pdb
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW2\obj\Debug\IPHW2.csprojResolveAssemblyReference.cache
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW2\obj\Debug\IPHW2.Form1.resources
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW2\obj\Debug\IPHW2.Properties.Resources.resources
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW2\obj\Debug\IPHW2.csproj.GenerateResource.Cache
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW2\obj\Debug\IPHW2.exe
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW2\obj\Debug\IPHW2.pdb

@@ -16,3 +16,12 @@ E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\obj\Debug\IPHW3.cs
 E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\obj\Debug\IPHW3.Form1.resources
 E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\obj\Debug\IPHW3.Properties.Resources.resources
 E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\obj\Debug\IPHW3.csproj.GenerateResource.Cache
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\bin\Debug\IPHW3.exe.config
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\bin\Debug\IPHW3.exe
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\bin\Debug\IPHW3.pdb
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\obj\Debug\IPHW3.csprojResolveAssemblyReference.cache
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\obj\Debug\IPHW3.Form1.resources
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\obj\Debug\IPHW3.Properties.Resources.resources
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\obj\Debug\IPHW3.csproj.GenerateResource.Cache
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\obj\Debug\IPHW3.exe
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW3\obj\Debug\IPHW3.pdb

@@ -4,3 +4,9 @@ E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\Test\bin\Debug\Test.pdb
 E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
 E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\Test\obj\Debug\Test.exe
 E:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\Test\obj\Debug\Test.pdb
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\Test\bin\Debug\Test.exe.config
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\Test\bin\Debug\Test.exe
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\Test\bin\Debug\Test.pdb
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\Test\obj\Debug\Test.exe
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\Test\obj\Debug\Test.pdb

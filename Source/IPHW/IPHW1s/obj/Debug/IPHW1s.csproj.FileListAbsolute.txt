@@ -4,3 +4,9 @@ c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW1s\bin\De
 c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW1s\obj\Debug\IPHW1s.csprojResolveAssemblyReference.cache
 c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW1s\obj\Debug\IPHW1s.exe
 c:\Users\duong\OneDrive\documents\visual studio 2015\Projects\IPHW\IPHW1s\obj\Debug\IPHW1s.pdb
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW1s\bin\Debug\IPHW1s.exe.config
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW1s\bin\Debug\IPHW1s.exe
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW1s\bin\Debug\IPHW1s.pdb
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW1s\obj\Debug\IPHW1s.csprojResolveAssemblyReference.cache
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW1s\obj\Debug\IPHW1s.exe
+D:\Study\Nam5_Ky1\Xu ly anh\ImageProcessing\Source\IPHW\IPHW1s\obj\Debug\IPHW1s.pdb

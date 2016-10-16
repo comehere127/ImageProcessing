@@ -30,6 +30,8 @@
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.txtThreshold = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
 			this.btnProcess = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.txtFile = new System.Windows.Forms.TextBox();
@@ -42,7 +44,7 @@
 			this.pbInput = new System.Windows.Forms.PictureBox();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.groupBox8 = new System.Windows.Forms.GroupBox();
-			this.lbGrayScale = new System.Windows.Forms.Label();
+			this.lbThreshold = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.lbSED = new System.Windows.Forms.Label();
 			this.lbfy = new System.Windows.Forms.Label();
@@ -89,6 +91,8 @@
 			// 
 			// groupBox2
 			// 
+			this.groupBox2.Controls.Add(this.txtThreshold);
+			this.groupBox2.Controls.Add(this.label4);
 			this.groupBox2.Controls.Add(this.btnProcess);
 			this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
 			this.groupBox2.Location = new System.Drawing.Point(621, 0);
@@ -98,12 +102,35 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Control";
 			// 
+			// txtThreshold
+			// 
+			this.txtThreshold.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtThreshold.Location = new System.Drawing.Point(172, 49);
+			this.txtThreshold.MaxLength = 3;
+			this.txtThreshold.Name = "txtThreshold";
+			this.txtThreshold.ReadOnly = true;
+			this.txtThreshold.Size = new System.Drawing.Size(132, 29);
+			this.txtThreshold.TabIndex = 12;
+			this.txtThreshold.TextChanged += new System.EventHandler(this.txtThreshold_TextChanged);
+			this.txtThreshold.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtThreshold_KeyPress);
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(4, 49);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(162, 21);
+			this.label4.TabIndex = 11;
+			this.label4.Text = "Threshold Parameter";
+			// 
 			// btnProcess
 			// 
+			this.btnProcess.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnProcess.Enabled = false;
 			this.btnProcess.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.btnProcess.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-			this.btnProcess.Location = new System.Drawing.Point(189, 19);
+			this.btnProcess.Location = new System.Drawing.Point(326, 19);
 			this.btnProcess.Name = "btnProcess";
 			this.btnProcess.Size = new System.Drawing.Size(80, 80);
 			this.btnProcess.TabIndex = 10;
@@ -185,6 +212,7 @@
 			this.pbDY.Location = new System.Drawing.Point(3, 16);
 			this.pbDY.Name = "pbDY";
 			this.pbDY.Size = new System.Drawing.Size(350, 350);
+			this.pbDY.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pbDY.TabIndex = 0;
 			this.pbDY.TabStop = false;
 			// 
@@ -221,7 +249,7 @@
 			// 
 			// groupBox8
 			// 
-			this.groupBox8.Controls.Add(this.lbGrayScale);
+			this.groupBox8.Controls.Add(this.lbThreshold);
 			this.groupBox8.Controls.Add(this.label5);
 			this.groupBox8.Controls.Add(this.lbSED);
 			this.groupBox8.Controls.Add(this.lbfy);
@@ -237,23 +265,23 @@
 			this.groupBox8.TabStop = false;
 			this.groupBox8.Text = "Information";
 			// 
-			// lbGrayScale
+			// lbThreshold
 			// 
-			this.lbGrayScale.AutoSize = true;
-			this.lbGrayScale.Location = new System.Drawing.Point(105, 43);
-			this.lbGrayScale.Name = "lbGrayScale";
-			this.lbGrayScale.Size = new System.Drawing.Size(0, 13);
-			this.lbGrayScale.TabIndex = 7;
+			this.lbThreshold.AutoSize = true;
+			this.lbThreshold.Location = new System.Drawing.Point(106, 188);
+			this.lbThreshold.Name = "lbThreshold";
+			this.lbThreshold.Size = new System.Drawing.Size(0, 13);
+			this.lbThreshold.TabIndex = 7;
 			// 
 			// label5
 			// 
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(129, 39);
+			this.label5.Location = new System.Drawing.Point(130, 186);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(96, 25);
 			this.label5.TabIndex = 6;
-			this.label5.Text = "GrayScale";
+			this.label5.Text = "Threshold";
 			// 
 			// lbSED
 			// 
@@ -326,6 +354,7 @@
 			this.pbDX.Location = new System.Drawing.Point(3, 16);
 			this.pbDX.Name = "pbDX";
 			this.pbDX.Size = new System.Drawing.Size(350, 350);
+			this.pbDX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pbDX.TabIndex = 0;
 			this.pbDX.TabStop = false;
 			// 
@@ -356,6 +385,7 @@
 			this.pbTheshold.Location = new System.Drawing.Point(3, 16);
 			this.pbTheshold.Name = "pbTheshold";
 			this.pbTheshold.Size = new System.Drawing.Size(350, 350);
+			this.pbTheshold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pbTheshold.TabIndex = 0;
 			this.pbTheshold.TabStop = false;
 			// 
@@ -376,6 +406,7 @@
 			this.pbSED.Location = new System.Drawing.Point(3, 16);
 			this.pbSED.Name = "pbSED";
 			this.pbSED.Size = new System.Drawing.Size(350, 350);
+			this.pbSED.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pbSED.TabIndex = 0;
 			this.pbSED.TabStop = false;
 			// 
@@ -392,6 +423,7 @@
 			this.Text = "Form1";
 			this.panel1.ResumeLayout(false);
 			this.groupBox2.ResumeLayout(false);
+			this.groupBox2.PerformLayout();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.panel2.ResumeLayout(false);
@@ -442,9 +474,11 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label lbGrayScale;
-		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Button btnProcess;
+		private System.Windows.Forms.Label lbThreshold;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.TextBox txtThreshold;
+		private System.Windows.Forms.Label label4;
 	}
 }
 
