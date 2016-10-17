@@ -1,4 +1,5 @@
-﻿using IPHW6.Process;
+﻿using IPHW6;
+using IPHW6.Process;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -84,11 +85,14 @@ namespace IPHW4
 					val = tmp[xTmp - 1, yTmp - 1] * cm.TopLeft + tmp[xTmp - 1, yTmp] * cm.TopMid + tmp[xTmp - 1, yTmp + 1] * cm.TopRight
 										+ tmp[xTmp, yTmp - 1] * cm.MidLeft + tmp[xTmp, yTmp] * cm.Pixel + tmp[xTmp, yTmp] * cm.MidRight
 										+ tmp[xTmp + 1, yTmp - 1] * cm.BottomLeft + tmp[xTmp + 1, yTmp] * cm.BottomMid + tmp[xTmp + 1, yTmp + 1] * cm.BottomRight;
-					if (val < 0) val = 0;
+					if (val < 0)
+						val = 0;
 					if (val > 255) val = 255;
 					image[xTmp - 1, yTmp - 1] = (byte)val;
 				}
 			}
+
+			FileHandling.WriteFile(image);
 			//for (int i = 0; i < image.GetLength(0); i++)
 			//{
 			//	Debug.WriteLine("");
@@ -142,9 +146,10 @@ namespace IPHW4
 				for (int yDes = 0; yDes < bSource.GetLength(1); yDes++)
 				{
 					val = (int)bSource[xDes, yDes];
-					if (val < iThreshold)
-						val = iThreshold;
-					if (val > 255) val = 255;
+					if (val >= iThreshold)
+						val = 0;
+					else
+						val = 255;
 
 					color = (byte)val;
 					bSource[xDes, yDes] = color;

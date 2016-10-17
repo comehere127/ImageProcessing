@@ -39,19 +39,9 @@
 			this.btnChoose = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
-			this.pbDY = new System.Windows.Forms.PictureBox();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.pbInput = new System.Windows.Forms.PictureBox();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.groupBox8 = new System.Windows.Forms.GroupBox();
-			this.lbThreshold = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.lbSED = new System.Windows.Forms.Label();
-			this.lbfy = new System.Windows.Forms.Label();
-			this.lbfx = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox6 = new System.Windows.Forms.GroupBox();
 			this.pbDX = new System.Windows.Forms.PictureBox();
 			this.panel4 = new System.Windows.Forms.Panel();
@@ -60,14 +50,22 @@
 			this.groupBox7 = new System.Windows.Forms.GroupBox();
 			this.pbSED = new System.Windows.Forms.PictureBox();
 			this.ofdChooseImage = new System.Windows.Forms.OpenFileDialog();
+			this.pbInput = new System.Windows.Forms.PictureBox();
+			this.pbDY = new System.Windows.Forms.PictureBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.lbfx = new System.Windows.Forms.Label();
+			this.lbfy = new System.Windows.Forms.Label();
+			this.lbSED = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.lbThreshold = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.groupBox4.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbDY)).BeginInit();
 			this.groupBox3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbInput)).BeginInit();
 			this.panel3.SuspendLayout();
 			this.groupBox8.SuspendLayout();
 			this.groupBox6.SuspendLayout();
@@ -77,6 +75,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.pbTheshold)).BeginInit();
 			this.groupBox7.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbSED)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbInput)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbDY)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -206,16 +206,6 @@
 			this.groupBox4.TabStop = false;
 			this.groupBox4.Text = "d(f)/d(y)";
 			// 
-			// pbDY
-			// 
-			this.pbDY.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pbDY.Location = new System.Drawing.Point(3, 16);
-			this.pbDY.Name = "pbDY";
-			this.pbDY.Size = new System.Drawing.Size(350, 350);
-			this.pbDY.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbDY.TabIndex = 0;
-			this.pbDY.TabStop = false;
-			// 
 			// groupBox3
 			// 
 			this.groupBox3.Controls.Add(this.pbInput);
@@ -226,16 +216,6 @@
 			this.groupBox3.TabIndex = 0;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Input";
-			// 
-			// pbInput
-			// 
-			this.pbInput.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pbInput.Location = new System.Drawing.Point(3, 16);
-			this.pbInput.Name = "pbInput";
-			this.pbInput.Size = new System.Drawing.Size(350, 350);
-			this.pbInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbInput.TabIndex = 0;
-			this.pbInput.TabStop = false;
 			// 
 			// panel3
 			// 
@@ -264,78 +244,6 @@
 			this.groupBox8.TabIndex = 1;
 			this.groupBox8.TabStop = false;
 			this.groupBox8.Text = "Information";
-			// 
-			// lbThreshold
-			// 
-			this.lbThreshold.AutoSize = true;
-			this.lbThreshold.Location = new System.Drawing.Point(106, 188);
-			this.lbThreshold.Name = "lbThreshold";
-			this.lbThreshold.Size = new System.Drawing.Size(0, 13);
-			this.lbThreshold.TabIndex = 7;
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(130, 186);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(96, 25);
-			this.label5.TabIndex = 6;
-			this.label5.Text = "Threshold";
-			// 
-			// lbSED
-			// 
-			this.lbSED.AutoSize = true;
-			this.lbSED.Location = new System.Drawing.Point(106, 150);
-			this.lbSED.Name = "lbSED";
-			this.lbSED.Size = new System.Drawing.Size(0, 13);
-			this.lbSED.TabIndex = 5;
-			// 
-			// lbfy
-			// 
-			this.lbfy.AutoSize = true;
-			this.lbfy.Location = new System.Drawing.Point(106, 114);
-			this.lbfy.Name = "lbfy";
-			this.lbfy.Size = new System.Drawing.Size(0, 13);
-			this.lbfy.TabIndex = 4;
-			// 
-			// lbfx
-			// 
-			this.lbfx.AutoSize = true;
-			this.lbfx.Location = new System.Drawing.Point(106, 78);
-			this.lbfx.Name = "lbfx";
-			this.lbfx.Size = new System.Drawing.Size(0, 13);
-			this.lbfx.TabIndex = 3;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(130, 148);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(186, 25);
-			this.label3.TabIndex = 2;
-			this.label3.Text = "Sobel Edge Detector";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(130, 111);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(84, 25);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "d(f)/d(y)";
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(130, 74);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(84, 25);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "d(f)/d(x)";
 			// 
 			// groupBox6
 			// 
@@ -410,6 +318,98 @@
 			this.pbSED.TabIndex = 0;
 			this.pbSED.TabStop = false;
 			// 
+			// pbInput
+			// 
+			this.pbInput.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pbInput.Location = new System.Drawing.Point(3, 16);
+			this.pbInput.Name = "pbInput";
+			this.pbInput.Size = new System.Drawing.Size(350, 350);
+			this.pbInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbInput.TabIndex = 0;
+			this.pbInput.TabStop = false;
+			// 
+			// pbDY
+			// 
+			this.pbDY.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pbDY.Location = new System.Drawing.Point(3, 16);
+			this.pbDY.Name = "pbDY";
+			this.pbDY.Size = new System.Drawing.Size(350, 350);
+			this.pbDY.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbDY.TabIndex = 0;
+			this.pbDY.TabStop = false;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(130, 74);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(84, 25);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "d(f)/d(x)";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(130, 111);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(84, 25);
+			this.label2.TabIndex = 1;
+			this.label2.Text = "d(f)/d(y)";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(130, 148);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(186, 25);
+			this.label3.TabIndex = 2;
+			this.label3.Text = "Sobel Edge Detector";
+			// 
+			// lbfx
+			// 
+			this.lbfx.AutoSize = true;
+			this.lbfx.Location = new System.Drawing.Point(106, 78);
+			this.lbfx.Name = "lbfx";
+			this.lbfx.Size = new System.Drawing.Size(0, 13);
+			this.lbfx.TabIndex = 3;
+			// 
+			// lbfy
+			// 
+			this.lbfy.AutoSize = true;
+			this.lbfy.Location = new System.Drawing.Point(106, 114);
+			this.lbfy.Name = "lbfy";
+			this.lbfy.Size = new System.Drawing.Size(0, 13);
+			this.lbfy.TabIndex = 4;
+			// 
+			// lbSED
+			// 
+			this.lbSED.AutoSize = true;
+			this.lbSED.Location = new System.Drawing.Point(106, 150);
+			this.lbSED.Name = "lbSED";
+			this.lbSED.Size = new System.Drawing.Size(0, 13);
+			this.lbSED.TabIndex = 5;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(130, 186);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(96, 25);
+			this.label5.TabIndex = 6;
+			this.label5.Text = "Threshold";
+			// 
+			// lbThreshold
+			// 
+			this.lbThreshold.AutoSize = true;
+			this.lbThreshold.Location = new System.Drawing.Point(106, 188);
+			this.lbThreshold.Name = "lbThreshold";
+			this.lbThreshold.Size = new System.Drawing.Size(0, 13);
+			this.lbThreshold.TabIndex = 7;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -428,9 +428,7 @@
 			this.groupBox1.PerformLayout();
 			this.panel2.ResumeLayout(false);
 			this.groupBox4.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pbDY)).EndInit();
 			this.groupBox3.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pbInput)).EndInit();
 			this.panel3.ResumeLayout(false);
 			this.groupBox8.ResumeLayout(false);
 			this.groupBox8.PerformLayout();
@@ -441,6 +439,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.pbTheshold)).EndInit();
 			this.groupBox7.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pbSED)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbInput)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pbDY)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -455,9 +455,7 @@
 		private System.Windows.Forms.Button btnChoose;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.GroupBox groupBox4;
-		private System.Windows.Forms.PictureBox pbDY;
 		private System.Windows.Forms.GroupBox groupBox3;
-		private System.Windows.Forms.PictureBox pbInput;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.GroupBox groupBox6;
 		private System.Windows.Forms.PictureBox pbDX;
@@ -468,17 +466,19 @@
 		private System.Windows.Forms.PictureBox pbSED;
 		private System.Windows.Forms.GroupBox groupBox8;
 		private System.Windows.Forms.OpenFileDialog ofdChooseImage;
+		private System.Windows.Forms.Button btnProcess;
+		private System.Windows.Forms.TextBox txtThreshold;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.PictureBox pbDY;
+		private System.Windows.Forms.PictureBox pbInput;
+		private System.Windows.Forms.Label lbThreshold;
+		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label lbSED;
 		private System.Windows.Forms.Label lbfy;
 		private System.Windows.Forms.Label lbfx;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Button btnProcess;
-		private System.Windows.Forms.Label lbThreshold;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox txtThreshold;
-		private System.Windows.Forms.Label label4;
 	}
 }
 

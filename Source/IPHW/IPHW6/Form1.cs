@@ -44,6 +44,7 @@ namespace IPHW6
 					break;
 				case "btnreset":
 					txtFile.Clear();
+					txtThreshold.Clear();
 					txtThreshold.ReadOnly = true;
 					Reset(0);
 					SetColor(lbfx, Color.Transparent);
@@ -127,6 +128,7 @@ namespace IPHW6
 			pictureBox_SizeChanged(pbDY);
 			pictureBox_SizeChanged(pbSED);
 			pictureBox_SizeChanged(pbTheshold);
+
 			//byte[,] arrBInput = Common.ConvertTograyScale(bInput);
 			SetColor(lbfx, Color.Red);
 			SetColor(lbfy, Color.Yellow);
@@ -144,18 +146,15 @@ namespace IPHW6
 			pbSED.Update();
 			SetColor(lbSED, Color.Green);
 			SetColor(lbThreshold, Color.Red);
-			pbTheshold.Image=Common.ConvertToBitmap(Common.Threshold((Bitmap)pbSED.Image.Clone(),100));
+			pbTheshold.Image=Common.ConvertToBitmap(Common.Threshold((Bitmap)pbSED.Image.Clone(),Int32.Parse(txtThreshold.Text)));
 			pbTheshold.Update();
 			SetColor(lbThreshold, Color.Green);
-
 		}
 
 		private void txtThreshold_KeyPress(object sender, KeyPressEventArgs e)
 		{
 			if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-			{
 				e.Handled = true;
-			}
 		}
 
 		private void txtThreshold_TextChanged(object sender, EventArgs e)
@@ -173,13 +172,9 @@ namespace IPHW6
 		private void pictureBox_SizeChanged(PictureBox pb)
 		{
 			if(pb.Width<bInput.Width && pb.Height < bInput.Height)
-			{
 				pb.SizeMode = PictureBoxSizeMode.Zoom;
-			}
 			else
-			{
 				pb.SizeMode = PictureBoxSizeMode.Normal;
-			}
 			pb.Update();
 		}
 	}
