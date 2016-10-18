@@ -19,6 +19,7 @@ namespace IPHW6
 		public Form1()
 		{
 			InitializeComponent();
+			DrawingCircles(lbGraScale, 20);
 			DrawingCircles(lbfx,20);
 			DrawingCircles(lbfy, 20);
 			DrawingCircles(lbSED, 20);
@@ -130,23 +131,28 @@ namespace IPHW6
 			pictureBox_SizeChanged(pbTheshold);
 
 			//byte[,] arrBInput = Common.ConvertTograyScale(bInput);
-			SetColor(lbfx, Color.Red);
+			SetColor(lbGraScale, Color.Red);
+			SetColor(lbfx, Color.Yellow);
 			SetColor(lbfy, Color.Yellow);
 			SetColor(lbSED, Color.Yellow);
 			SetColor(lbThreshold, Color.Yellow);
-			pbDX.Image = Common.ConvertToBitmap(Common.Convl3x3(bInput, "x"));
+			pbGrayScale.Image= Common.ConvertToBitmap(Common.ConvertTograyScale(bInput));
+			pbGrayScale.Update();
+			SetColor(lbGraScale, Color.Green);
+			SetColor(lbfx, Color.Red);
+			pbDX.Image = Common.ConvertToBitmap(Common.Convl3x3(Common.ConvertTograyScale(bInput), "x"));
 			pbDX.Update();
 			SetColor(lbfx, Color.Green);
 			SetColor(lbfy, Color.Red);
-			pbDY.Image = Common.ConvertToBitmap(Common.Convl3x3(bInput, "y"));
+			pbDY.Image = Common.ConvertToBitmap(Common.Convl3x3(Common.ConvertTograyScale(bInput), "y"));
 			pbDY.Update();
 			SetColor(lbfy, Color.Green);
 			SetColor(lbSED, Color.Red);
-			pbSED.Image = Common.ConvertToBitmap(Common.SobelConvol((Bitmap)pbDX.Image.Clone(), (Bitmap)pbDY.Image.Clone()));
+			pbSED.Image = Common.ConvertToBitmap(Common.SobelConvol(Common.Convl3x3(Common.ConvertTograyScale(bInput), "x"), Common.Convl3x3(Common.ConvertTograyScale(bInput), "y")));
 			pbSED.Update();
 			SetColor(lbSED, Color.Green);
 			SetColor(lbThreshold, Color.Red);
-			pbTheshold.Image=Common.ConvertToBitmap(Common.Threshold((Bitmap)pbSED.Image.Clone(),Int32.Parse(txtThreshold.Text)));
+			pbTheshold.Image = Common.ConvertToBitmap(Common.Threshold(Common.SobelConvol(Common.Convl3x3(Common.ConvertTograyScale(bInput), "x"), Common.Convl3x3(Common.ConvertTograyScale(bInput), "y")), Int32.Parse(txtThreshold.Text)));
 			pbTheshold.Update();
 			SetColor(lbThreshold, Color.Green);
 		}
@@ -162,8 +168,6 @@ namespace IPHW6
 			if (txtThreshold.Text != "")
 			{
 				btnProcess.Enabled = true;
-				if (Int32.Parse(txtThreshold.Text) > 255)
-					txtThreshold.Text = "255";
 			}
 			else
 				btnProcess.Enabled = false;
