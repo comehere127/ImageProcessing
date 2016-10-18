@@ -92,7 +92,7 @@ namespace IPHW4
 				}
 			}
 
-			FileHandling.WriteFile(image);
+			//FileHandling.WriteFile(image);
 			//for (int i = 0; i < image.GetLength(0); i++)
 			//{
 			//	Debug.WriteLine("");
