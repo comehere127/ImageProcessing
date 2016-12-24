@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPHW6", "IPHW6\IPHW6.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{BBFB37D2-2F46-41A3-88AD-A5683518A9E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPHW7", "IPHW7\IPHW7.csproj", "{AFE46900-4923-4C3A-88E9-10FC6B4A05B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTSU", "OTSU\OTSU.csproj", "{09C4BEAD-1C13-4C20-AB42-F619E4A1FBCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{BBFB37D2-2F46-41A3-88AD-A5683518A9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBFB37D2-2F46-41A3-88AD-A5683518A9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBFB37D2-2F46-41A3-88AD-A5683518A9E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE46900-4923-4C3A-88E9-10FC6B4A05B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE46900-4923-4C3A-88E9-10FC6B4A05B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE46900-4923-4C3A-88E9-10FC6B4A05B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE46900-4923-4C3A-88E9-10FC6B4A05B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C4BEAD-1C13-4C20-AB42-F619E4A1FBCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C4BEAD-1C13-4C20-AB42-F619E4A1FBCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C4BEAD-1C13-4C20-AB42-F619E4A1FBCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C4BEAD-1C13-4C20-AB42-F619E4A1FBCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

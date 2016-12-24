@@ -76,14 +76,14 @@ namespace IPHW4
 					}
 				}
 			}
-			
+
 			for (int xTmp = 1; xTmp < tmp.GetLength(0) - 1; xTmp++)
 			{
 				for (int yTmp = 1; yTmp < tmp.GetLength(1) - 1; yTmp++)
 				{
 					val = tmp[xTmp - 1, yTmp - 1] * cm.TopLeft + tmp[xTmp - 1, yTmp] * cm.TopMid + tmp[xTmp - 1, yTmp + 1] * cm.TopRight
-										+ tmp[xTmp, yTmp - 1] * cm.MidLeft + tmp[xTmp, yTmp] * cm.Pixel + tmp[xTmp, yTmp] * cm.MidRight
-										+ tmp[xTmp + 1, yTmp - 1] * cm.BottomLeft + tmp[xTmp + 1, yTmp] * cm.BottomMid + tmp[xTmp + 1, yTmp + 1] * cm.BottomRight;
+							+ tmp[xTmp, yTmp - 1] * cm.MidLeft + tmp[xTmp, yTmp] * cm.Pixel + tmp[xTmp, yTmp + 1] * cm.MidRight
+							+ tmp[xTmp + 1, yTmp - 1] * cm.BottomLeft + tmp[xTmp + 1, yTmp] * cm.BottomMid + tmp[xTmp + 1, yTmp + 1] * cm.BottomRight;
 					image[xTmp - 1, yTmp - 1] = val;
 				}
 			}
@@ -118,7 +118,7 @@ namespace IPHW4
 			}
 			return imageDes;
 		}
-		public static double[,] Threshold(double[,] bSource, int iThreshold)
+		public static double[,] Threshold(double[,] bSource, double iThreshold)
 		{
 			double val;
 			for (int xDes = 0; xDes < bSource.GetLength(0); xDes++)
@@ -134,6 +134,42 @@ namespace IPHW4
 				}
 			}
 			return bSource;
+		}
+		public static double BasicGlobalThresholding(double[,] bSource, double Threshold, int Loops)
+		{
+			int flagAbove = 0;
+			int flagBelow = 0;
+			double sumAbove = 0;
+			double sumBelow = 0;
+			double val;
+			for (int xDes = 0; xDes < bSource.GetLength(0); xDes++)
+			{
+				for (int yDes = 0; yDes < bSource.GetLength(1); yDes++)
+				{
+					val = bSource[xDes, yDes];
+					if (val >= Threshold)
+					{
+						sumAbove += val;
+						flagAbove++;
+					}
+					else
+					{
+						sumBelow += val;
+						flagBelow++;
+					}
+				}
+			}
+			double iThreshold = (double)(((double)(sumAbove / flagAbove) + (double)(sumBelow /flagBelow)) / 2);
+			Debug.WriteLine(iThreshold);
+			if (Loops == 0)
+			{
+				return iThreshold;
+			}else
+			{
+				Loops--;
+				Debug.WriteLine(Loops);
+				return BasicGlobalThresholding(bSource, iThreshold, Loops--);
+			}
 		}
 	}
 }

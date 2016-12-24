@@ -113,6 +113,12 @@ namespace IPHW6
 						pbTheshold.Image = null;
 						pbTheshold.Update();
 					}
+					if (pbGrayScale.Image != null)
+					{
+						pbGrayScale.Image.Dispose();
+						pbGrayScale.Image = null;
+						pbGrayScale.Update();
+					}
 					break;
 				case 0:
 					Reset(1);
@@ -136,7 +142,7 @@ namespace IPHW6
 			SetColor(lbfy, Color.Yellow);
 			SetColor(lbSED, Color.Yellow);
 			SetColor(lbThreshold, Color.Yellow);
-			pbGrayScale.Image= Common.ConvertToBitmap(Common.ConvertTograyScale(bInput));
+			pbGrayScale.Image = Common.ConvertToBitmap(Common.ConvertTograyScale(bInput));
 			pbGrayScale.Update();
 			SetColor(lbGraScale, Color.Green);
 			SetColor(lbfx, Color.Red);
@@ -152,9 +158,15 @@ namespace IPHW6
 			pbSED.Update();
 			SetColor(lbSED, Color.Green);
 			SetColor(lbThreshold, Color.Red);
-			pbTheshold.Image = Common.ConvertToBitmap(Common.Threshold(Common.SobelConvol(Common.Convl3x3(Common.ConvertTograyScale(bInput), "x"), Common.Convl3x3(Common.ConvertTograyScale(bInput), "y")), Int32.Parse(txtThreshold.Text)));
+			double Threshold = 0;
+			if (cbBGT.Checked)
+				Threshold = Common.BasicGlobalThresholding(Common.SobelConvol(Common.Convl3x3(Common.ConvertTograyScale(bInput), "x"), Common.Convl3x3(Common.ConvertTograyScale(bInput), "y")), double.Parse(txtThreshold.Text), Int32.Parse(txtBGT.Text));
+			else
+				Threshold = double.Parse(txtThreshold.Text);
+			pbTheshold.Image = Common.ConvertToBitmap(Common.Threshold(Common.SobelConvol(Common.Convl3x3(Common.ConvertTograyScale(bInput), "x"), Common.Convl3x3(Common.ConvertTograyScale(bInput), "y")), Threshold));
 			pbTheshold.Update();
 			SetColor(lbThreshold, Color.Green);
+			
 		}
 
 		private void txtThreshold_KeyPress(object sender, KeyPressEventArgs e)
@@ -180,6 +192,14 @@ namespace IPHW6
 			else
 				pb.SizeMode = PictureBoxSizeMode.Normal;
 			pb.Update();
+		}
+
+		private void cbBGT_CheckedChanged(object sender, EventArgs e)
+		{
+			if (cbBGT.Checked)
+				txtBGT.Visible = lbLoops.Visible= true;
+			else
+				txtBGT.Visible = lbLoops.Visible = false;
 		}
 	}
 }

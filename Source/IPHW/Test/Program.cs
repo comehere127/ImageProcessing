@@ -10,7 +10,11 @@ namespace Test
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine(aaa(4, "x"));
+			//List<int> aaa = new List<int>();
+			//aaa.Add(12);
+			//aaa.Add(13);
+			//Console.WriteLine(aaa.Average());
+			Console.Write((byte)100.565665);
 			Console.ReadLine();
 		}
 		static int aaa(int k, string type)

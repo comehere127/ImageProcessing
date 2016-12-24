@@ -21,7 +21,7 @@ namespace IPHW1s
 			{
 				for (int y = -index; y <= index; y++)
 				{
-					gKernel[x + index, y + index] = gaussian(x, y, sigma);
+					gKernel[x + index, y + index] = Gaussian(x, y, sigma);
 					sum += gKernel[x + index, y + index];
 				}
 			}
@@ -40,10 +40,10 @@ namespace IPHW1s
 
 			Console.Read();
 		}
-		static double gaussian(int x, int y, double sigma)
+		static double Gaussian(int x, int y, double sigma)
 		{
 			double c = 2 * sigma * sigma;
-			return 1 / (Math.PI * c * Math.Exp((x * x + y * y) / c));
+			return 1 / (Math.Exp((x * x + y * y) / c));
 		}
 	}
 }

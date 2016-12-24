@@ -30,6 +30,8 @@
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.txtBGT = new System.Windows.Forms.TextBox();
+			this.cbBGT = new System.Windows.Forms.CheckBox();
 			this.txtThreshold = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.btnProcess = new System.Windows.Forms.Button();
@@ -39,10 +41,12 @@
 			this.btnChoose = new System.Windows.Forms.Button();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.groupBox4 = new System.Windows.Forms.GroupBox();
+			this.pbGrayScale = new System.Windows.Forms.PictureBox();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.pbInput = new System.Windows.Forms.PictureBox();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.groupBox8 = new System.Windows.Forms.GroupBox();
+			this.pbDY = new System.Windows.Forms.PictureBox();
 			this.groupBox6 = new System.Windows.Forms.GroupBox();
 			this.pbDX = new System.Windows.Forms.PictureBox();
 			this.panel4 = new System.Windows.Forms.Panel();
@@ -59,19 +63,20 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.pbDY = new System.Windows.Forms.PictureBox();
-			this.pbGrayScale = new System.Windows.Forms.PictureBox();
 			this.lbGraScale = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
+			this.lbLoops = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.groupBox4.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbGrayScale)).BeginInit();
 			this.groupBox3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbInput)).BeginInit();
 			this.panel3.SuspendLayout();
 			this.groupBox8.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbDY)).BeginInit();
 			this.groupBox6.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbDX)).BeginInit();
 			this.panel4.SuspendLayout();
@@ -79,8 +84,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pbTheshold)).BeginInit();
 			this.groupBox7.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbSED)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbDY)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbGrayScale)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -96,6 +99,9 @@
 			// groupBox2
 			// 
 			this.groupBox2.Controls.Add(this.txtThreshold);
+			this.groupBox2.Controls.Add(this.lbLoops);
+			this.groupBox2.Controls.Add(this.txtBGT);
+			this.groupBox2.Controls.Add(this.cbBGT);
 			this.groupBox2.Controls.Add(this.label4);
 			this.groupBox2.Controls.Add(this.btnProcess);
 			this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -106,13 +112,38 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Control";
 			// 
+			// txtBGT
+			// 
+			this.txtBGT.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtBGT.Location = new System.Drawing.Point(225, 75);
+			this.txtBGT.Name = "txtBGT";
+			this.txtBGT.Size = new System.Drawing.Size(85, 29);
+			this.txtBGT.TabIndex = 14;
+			this.txtBGT.Visible = false;
+			this.txtBGT.TextChanged += new System.EventHandler(this.txtThreshold_TextChanged);
+			this.txtBGT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtThreshold_KeyPress);
+			// 
+			// cbBGT
+			// 
+			this.cbBGT.AutoSize = true;
+			this.cbBGT.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbBGT.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+			this.cbBGT.Location = new System.Drawing.Point(14, 46);
+			this.cbBGT.Name = "cbBGT";
+			this.cbBGT.Size = new System.Drawing.Size(217, 25);
+			this.cbBGT.TabIndex = 13;
+			this.cbBGT.Text = "Basic Global Thresholding";
+			this.cbBGT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.cbBGT.UseVisualStyleBackColor = true;
+			this.cbBGT.CheckedChanged += new System.EventHandler(this.cbBGT_CheckedChanged);
+			// 
 			// txtThreshold
 			// 
 			this.txtThreshold.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtThreshold.Location = new System.Drawing.Point(172, 49);
+			this.txtThreshold.Location = new System.Drawing.Point(225, 19);
 			this.txtThreshold.Name = "txtThreshold";
 			this.txtThreshold.ReadOnly = true;
-			this.txtThreshold.Size = new System.Drawing.Size(132, 29);
+			this.txtThreshold.Size = new System.Drawing.Size(85, 29);
 			this.txtThreshold.TabIndex = 12;
 			this.txtThreshold.TextChanged += new System.EventHandler(this.txtThreshold_TextChanged);
 			this.txtThreshold.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtThreshold_KeyPress);
@@ -121,7 +152,7 @@
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(4, 49);
+			this.label4.Location = new System.Drawing.Point(30, 22);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(162, 21);
 			this.label4.TabIndex = 11;
@@ -209,6 +240,16 @@
 			this.groupBox4.TabStop = false;
 			this.groupBox4.Text = "GrayScale";
 			// 
+			// pbGrayScale
+			// 
+			this.pbGrayScale.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pbGrayScale.Location = new System.Drawing.Point(3, 16);
+			this.pbGrayScale.Name = "pbGrayScale";
+			this.pbGrayScale.Size = new System.Drawing.Size(350, 350);
+			this.pbGrayScale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbGrayScale.TabIndex = 1;
+			this.pbGrayScale.TabStop = false;
+			// 
 			// groupBox3
 			// 
 			this.groupBox3.Controls.Add(this.pbInput);
@@ -250,6 +291,16 @@
 			this.groupBox8.TabIndex = 1;
 			this.groupBox8.TabStop = false;
 			this.groupBox8.Text = "d(f)/d(y)";
+			// 
+			// pbDY
+			// 
+			this.pbDY.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pbDY.Location = new System.Drawing.Point(3, 16);
+			this.pbDY.Name = "pbDY";
+			this.pbDY.Size = new System.Drawing.Size(350, 353);
+			this.pbDY.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pbDY.TabIndex = 1;
+			this.pbDY.TabStop = false;
 			// 
 			// groupBox6
 			// 
@@ -338,9 +389,9 @@
 			this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label5.Location = new System.Drawing.Point(1145, 290);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(96, 25);
+			this.label5.Size = new System.Drawing.Size(123, 25);
 			this.label5.TabIndex = 14;
-			this.label5.Text = "Threshold";
+			this.label5.Text = "Thresholding";
 			// 
 			// lbSED
 			// 
@@ -396,26 +447,6 @@
 			this.label1.TabIndex = 8;
 			this.label1.Text = "d(f)/d(x)";
 			// 
-			// pbDY
-			// 
-			this.pbDY.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pbDY.Location = new System.Drawing.Point(3, 16);
-			this.pbDY.Name = "pbDY";
-			this.pbDY.Size = new System.Drawing.Size(350, 353);
-			this.pbDY.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbDY.TabIndex = 1;
-			this.pbDY.TabStop = false;
-			// 
-			// pbGrayScale
-			// 
-			this.pbGrayScale.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pbGrayScale.Location = new System.Drawing.Point(3, 16);
-			this.pbGrayScale.Name = "pbGrayScale";
-			this.pbGrayScale.Size = new System.Drawing.Size(350, 350);
-			this.pbGrayScale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbGrayScale.TabIndex = 1;
-			this.pbGrayScale.TabStop = false;
-			// 
 			// lbGraScale
 			// 
 			this.lbGraScale.AutoSize = true;
@@ -433,6 +464,17 @@
 			this.label7.Size = new System.Drawing.Size(96, 25);
 			this.label7.TabIndex = 16;
 			this.label7.Text = "GrayScale";
+			// 
+			// lbLoops
+			// 
+			this.lbLoops.AutoSize = true;
+			this.lbLoops.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+			this.lbLoops.Location = new System.Drawing.Point(31, 75);
+			this.lbLoops.Name = "lbLoops";
+			this.lbLoops.Size = new System.Drawing.Size(135, 21);
+			this.lbLoops.TabIndex = 15;
+			this.lbLoops.Text = "Number of loops";
+			this.lbLoops.Visible = false;
 			// 
 			// Form1
 			// 
@@ -462,10 +504,12 @@
 			this.groupBox1.PerformLayout();
 			this.panel2.ResumeLayout(false);
 			this.groupBox4.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pbGrayScale)).EndInit();
 			this.groupBox3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pbInput)).EndInit();
 			this.panel3.ResumeLayout(false);
 			this.groupBox8.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pbDY)).EndInit();
 			this.groupBox6.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pbDX)).EndInit();
 			this.panel4.ResumeLayout(false);
@@ -473,8 +517,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pbTheshold)).EndInit();
 			this.groupBox7.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pbSED)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbDY)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pbGrayScale)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -517,6 +559,9 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label lbGraScale;
 		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.TextBox txtBGT;
+		private System.Windows.Forms.CheckBox cbBGT;
+		private System.Windows.Forms.Label lbLoops;
 	}
 }
 

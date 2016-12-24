@@ -9,7 +9,7 @@ namespace IPHW6
 {
 	public static class FileHandling
 	{
-		public static void WriteFile(byte[,] bSource)
+		public static void WriteFile(double[,] bSource)
 		{
 			StreamWriter sw = new StreamWriter(@"C:\Users\TuDHM\Desktop\output.txt");
 			for (int i = 0; i < bSource.GetLength(0); i++)
